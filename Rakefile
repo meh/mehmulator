@@ -4,7 +4,7 @@ require 'rake/clean'
 NAME    = 'mehmulator'
 VERSION = '0.0.1'
 
-CFLAGS  = "-Os -Wall -Wno-invalid-offsetof -fno-exceptions -fno-rtti -D___VERSION___='\"#{VERSION}\"' -Isources/BackEnd/nanojit/nanojit -DFEATURE_NANOJIT"
+CFLAGS  = "-Os -Wall -fno-exceptions -fno-rtti -D___VERSION___='\"#{VERSION}\"'"
 LDFLAGS = ''
 
 CLEAN.include('sources/**/*.o')
